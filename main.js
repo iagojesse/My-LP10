@@ -1,6 +1,7 @@
+
 import React from "react";
 import ContactForm from "./Components/ContactForm";
-import Button from "./Components/Button";
+import ButtonComponent from "./Components/ButtonComponent"; // Alterado para ButtonComponent
 import "./styles/App.css";
 
 function App() {
@@ -11,15 +12,15 @@ function App() {
   return React.createElement(
     "div",
     { className: "App" },
-    React.createElement(Button, {
+    React.createElement(ButtonComponent, { // Alterado para ButtonComponent
       text: "Contato",
       onClick: () => handleButtonClick("Contato"),
     }),
-    React.createElement(Button, {
+    React.createElement(ButtonComponent, { // Alterado para ButtonComponent
       text: "Portfolio",
       onClick: () => handleButtonClick("Portfolio"),
     }),
-    React.createElement(Button, {
+    React.createElement(ButtonComponent, { // Alterado para ButtonComponent
       text: "Curriculo",
       onClick: () => handleButtonClick("Curriculo"),
     }),
