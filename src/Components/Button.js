@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React from "react";
 import "./Button.css";
 
 function ButtonComponent({ text, onClick }) {
@@ -9,27 +9,4 @@ function ButtonComponent({ text, onClick }) {
   );
 }
 
-function App() {
-  const handleButtonClick = (buttonName) => {
-    console.log(`${buttonName} clicado`);
-  };
-
-  return (
-    <div>
-      <ButtonComponent
-        text="btnCurriculo"
-        onClick={() => handleButtonClick("btnCurriculo")}
-      />
-      <ButtonComponent
-        text="btnPortfolio"
-        onClick={() => handleButtonClick("btnPortfolio")}
-      />
-      <ButtonComponent
-        text="btnContato"
-        onClick={() => handleButtonClick("btnContato")}
-      />
-    </div>
-  );
-}
-
-export default App;
+export default ButtonComponent; // Alterado para exportar ButtonComponent
